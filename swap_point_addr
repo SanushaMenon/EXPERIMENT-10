@@ -1,0 +1,38 @@
+//PRN: 22070123099
+//EXP.10
+//NAME:SANUSHA MENON
+
+#include<iostream>
+using namespace std;
+
+void increment(int *a){
+    ++*a;
+}
+
+void swap(int *a, int *b){
+    int *temp;
+    *temp=*a;
+    *a=*b;
+    *b=*temp;
+}
+
+
+int main() {
+    int a = 2;
+    cout<<a<<"  "<<&a<<endl;
+    increment(&a);
+    cout<<a<<"  "<<&a<<endl;
+
+    int x, y;
+    cin>>x>>y;
+    cout<<"Before Swapping: "<<x<<"   "<<y<<endl;
+    swap(&x,&y);
+    cout<<"After Swapping: "<<x<<"   "<<y;
+}
+/*/OUTPUT
+2  0x7ffe82bb07cc
+3  0x7ffe82bb07cc
+12
+122
+Before Swapping: 12   122
+/*/
