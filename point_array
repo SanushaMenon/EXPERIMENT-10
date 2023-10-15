@@ -1,0 +1,26 @@
+//PRN: 22070123099
+//EXP.10
+//NAME:SANUSHA MENON
+
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int i=0, *ptr, arr[]={56, 13, 4};
+    
+    ptr=arr;
+    cout<<"All elements: "<<endl;
+    while(i<3){
+        cout<<ptr<<"   "<<*ptr<<endl;
+        //cout<<*ptr<<endl;
+        ptr++;
+        i++;
+    }
+}
+/*/OUTPUT
+All elements: 
+0x7fff481472d4   56
+0x7fff481472d8   13
+0x7fff481472dc   4
+/*/
